@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  
+}
+nav{
+  position:relative;
+    overflow-x:hidden;
+background:#fff;
+   transition:0.5s;
+    width:45px;
+    height:100vh;
+    top:0;
+    bottom:0;
+    
+   } 
+
+nav:hover{
+  width:180px;
+}
+  a{
+    text-decoration:none;
+    color:#c1c1c1;
+    padding:7px;
+    display:block;
+width:140px; 
+transition:0.2s;
+margin-left:7px;
+}
+ a i{
+   margin-right:8px;
+   color:#ff9966;
+ }
+ a:hover{
+   background:#4d4d4d;
+   color:white;
+ }
+
+span{
+  padding-left:8px;
+}
+  
+  .container{
+display:flex;
+
+overflow:hidden;
+}
+  .left_side{
+    position:relative;
+    background:rgb(225,225,225);
+   width:100%;
+  
+   height:100vh;
+ }
+
+.man-top{
+background:#fff;
+  display:flex;
+  border-bottom:2px solid #ff9966;
+padding:4px;
+
+  justify-content:space-around;
+  
+}
+
+
+.search{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+ background-color:#fff;
+ color:gray;
+  border:2px solid #d1d1d1;
+  border-radius:7px;
+width:150px;
+padding:1px;
+  
+}
+.search i{
+  color:#ddd;
+}
+input{
+  outline:none;
+  border:none;
+  padding:3px;
+  width:130px;
+  
+}
+.user{
+background:#ff9966;
+color:white;
+font-size:15px;
+  line-height:20px;
+  padding:3px;
+  padding-bottom:6px;
+border-radius:5px;
+}
+.box_cont{
+ margin:5px;
+position:relative;
+}
+.box1{
+  background:#fff;
+  display:flex;
+  
+  border-radius:5px;
+  padding:5px;
+  margin:5px;
+
+  align-items:center;
+}
+.box1 h3{
+  font-size:12px;
+  font-weight:600;
+  color:#4d4d4d;
+}
+.box1 span{
+  font-size:12px;
+  font-weight:700;
+}
+.box1 i{
+  margin-right:10px;
+  color:#fff;
+  background:#b1e;
+  width:20px;
+  padding:10px;
+  height:20px;
+  border-radius:50%;
+  align-items:center;
+}
+.box1:nth-child(1)
+{
+  background:rgb(230, 255, 230);
+}
+.box1:nth-child(2)
+{
+  background:rgb(204, 255, 255);
+}
+.box1:nth-child(3){
+  background:rgb(255, 204, 204);
+  }
+.table_cont{
+
+  margin:10px;
+  
+  align-items:center;
+}
+table{
+ position:absolute;
+  width:95%;
+  box-shadow:2px 2px 2px #c1c1c1;
+  background:#fff;
+  
+   border-collapse:collapse;
+}
+tr, td{
+  border-spacing: 45px; 
+  padding:4px;
+  border-collapse:sep;
+  border:0.5px solid #d1d1d1;
+  text-align:center;
+}
+th{
+  color:#f9f9f9;
+  background-color:#ff9966;
+  font-size:12px;
+  font-weight:600;
+}
+td{
+  font-size:10px;
+  font-weight:bold;
+    color:#4d4d4d;
+}
+td:nth-child(odd){
+  color:#ff9966;
+background:#f1f1f1;
+}
+
+@media screen and (min-width:760px){
+.box_cont .box1{
+  width:180px;
+  justify-content:space-around;
+
+  
+}
+.box_cont{
+  margin-left:80px;
+ display:flex; 
+}
+table{
+  width:70%;
+margin-left:60px;
+}
+.search{
+  width:330px;
+  padding:2px;
+  margin-right:70px;
+}
+.man-top{
+  justify-content:end;
+}
+.user{
+  margin-right:50px;
+}
+
+input{
+  width:310px;
+
+}
+}
+
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+  <nav>
+   <a href="#"><i class="fa fa-bars" aria-hidden="true"></i><span>Menu</span></a>
+   <a href="#"><i class="fa fa-windows" aria-hidden="true"></i><span>Dashbord</span></a>
+    <a href="#"><i class="fa fa-th-list" aria-hidden="true"></i><span>Booked</span></a>
+    
+
+     
+
+    <a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>User</span></a>
+     
+    <a href="#"><i class="fa fa-bed" aria-hidden="true"></i><span>Rooms</span></a>
+    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i><span>Setting</span></a>
+        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout</span></a>
+    
+       </nav>
+         <div class="left_side">
+           <div class="man-top">
+<span class="search"><input type="search" placeholder="search"><i class="fa fa-search" aria-hidden="true"></i></span>
+<div class="user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></div></div>
+<div class="box_cont">
+  <div class="box1">
+<i class="fa fa-bed" aria-hidden="true"></i>
+    <div class="val">
+      <h3>Total Rooms</h3>
+      <span>21</span>
+    </div>
+  </div>
+  
+    <div class="box1">
+   <i class="fa fa-users" aria-hidden="true"></i>
+    <div class="val">
+      <h3>Total User</h3>
+      <span>15</span>
+    </div>
+  </div>
+  
+    <div class="box1">
+<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    <div class="val">
+      <h3>Total Admins</h3>
+      <span>2</span>
+    </div>
+  </div></div>
+
+   
+   
+<div class="table_cont">
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Room Name</th>
+      <th>Total Rooms</th>
+      <th>No of Beds</th>
+      <th>Price</th>
+      <th>Status</th>
+      
+    </tr>
+  <tr>
+    <td>1</td>
+    <td>premium</td>
+    <td>2</td>
+    <td>3</td>
+    <td>200</td>
+    <td style="color:green" >visible</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Delux rooms</td>
+    <td>2</td>
+    <td>2</td>
+    <td>250</td>
+    <td style="color:green">visible</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>TEsting</td>
+    <td>4</td>
+    <td>3</td>
+    <td>150</td>
+    <td style="color:red">hidden</td>
+  </tr>
+  </table>
+</div>
+</div>
+
+          </div>  </body>
+          </html>
+  
